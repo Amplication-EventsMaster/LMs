@@ -21,6 +21,10 @@ import { EnrollmentList } from "./enrollment/EnrollmentList";
 import { EnrollmentCreate } from "./enrollment/EnrollmentCreate";
 import { EnrollmentEdit } from "./enrollment/EnrollmentEdit";
 import { EnrollmentShow } from "./enrollment/EnrollmentShow";
+import { ContactInformationList } from "./contactInformation/ContactInformationList";
+import { ContactInformationCreate } from "./contactInformation/ContactInformationCreate";
+import { ContactInformationEdit } from "./contactInformation/ContactInformationEdit";
+import { ContactInformationShow } from "./contactInformation/ContactInformationShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -74,6 +78,13 @@ const App = (): React.ReactElement => {
           edit={EnrollmentEdit}
           create={EnrollmentCreate}
           show={EnrollmentShow}
+        />
+        <Resource
+          name="ContactInformation"
+          list={ContactInformationList}
+          edit={ContactInformationEdit}
+          create={ContactInformationCreate}
+          show={ContactInformationShow}
         />
       </Admin>
     </div>
