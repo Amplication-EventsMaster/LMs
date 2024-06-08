@@ -53,18 +53,3 @@ model Enrollment {
   studentId      String?
   updatedAt      DateTime  @updatedAt
 }
-
-model ContactInformation {
-  address1  String? @db.VarChar(100)
-  address2  String? @db.VarChar(100)
-  city      String? @db.VarChar(100)
-  country   String? @db.VarChar(100)
-  id        Int     @id @default(autoincrement()) @map("contact_information_id")
-  phone     String? @db.VarChar(50)
-  state     String? @db.VarChar(100)
-  studentId Int     @default(0) @map("student_id")
-  zip       String? @db.VarChar(100)
-
-  @@index([studentId], map: "student_id")
-  @@map("contact_information")
-}
