@@ -18,21 +18,21 @@ import { FailingService } from "../failing.service";
 const nonExistingId = "nonExistingId";
 const existingId = "existingId";
 const CREATE_INPUT = {
-  id: 42,
+  id: "exampleId",
   zip: "exampleZip",
 };
 const CREATE_RESULT = {
-  id: 42,
+  id: "exampleId",
   zip: "exampleZip",
 };
 const FIND_MANY_RESULT = [
   {
-    id: 42,
+    id: "exampleId",
     zip: "exampleZip",
   },
 ];
 const FIND_ONE_RESULT = {
-  id: 42,
+  id: "exampleId",
   zip: "exampleZip",
 };
 

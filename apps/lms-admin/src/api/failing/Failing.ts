@@ -1,4 +1,4 @@
 export type Failing = {
-  id: number;
+  id: string;
   zip: string | null;
 };
