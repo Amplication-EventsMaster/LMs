@@ -61,6 +61,4 @@ model ContactInformation {
 model Failing {
   id  Int     @id @default(autoincrement())
   zip String?
-
-  @@index([studentId], map: "student_id")
 }
