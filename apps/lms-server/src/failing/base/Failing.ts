@@ -11,7 +11,7 @@ https://docs.amplication.com/how-to/custom-code
   */
 import { ObjectType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsString, IsOptional } from "class-validator";
+import { IsString } from "class-validator";
 
 @ObjectType()
 class Failing {
@@ -24,15 +24,12 @@ class Failing {
   id!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  newField!: string | null;
+  @Field(() => String)
+  newField!: string;
 }
 
 export { Failing as Failing };

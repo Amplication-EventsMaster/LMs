@@ -24,7 +24,7 @@ class FailingUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  newField?: string | null;
+  newField?: string;
 }
 
 export { FailingUpdateInput as FailingUpdateInput };
