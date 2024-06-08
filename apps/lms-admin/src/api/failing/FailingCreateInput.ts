@@ -1,3 +1,3 @@
 export type FailingCreateInput = {
-  newField?: string | null;
+  newField: string;
 };

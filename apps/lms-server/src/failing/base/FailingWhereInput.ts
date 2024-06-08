@@ -14,7 +14,6 @@ import { ApiProperty } from "@nestjs/swagger";
 import { StringFilter } from "../../util/StringFilter";
 import { Type } from "class-transformer";
 import { IsOptional } from "class-validator";
-import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 @InputType()
 class FailingWhereInput {
@@ -31,14 +30,14 @@ class FailingWhereInput {
 
   @ApiProperty({
     required: false,
-    type: StringNullableFilter,
+    type: StringFilter,
   })
-  @Type(() => StringNullableFilter)
+  @Type(() => StringFilter)
   @IsOptional()
-  @Field(() => StringNullableFilter, {
+  @Field(() => StringFilter, {
     nullable: true,
   })
-  newField?: StringNullableFilter;
+  newField?: StringFilter;
 }
 
 export { FailingWhereInput as FailingWhereInput };

@@ -11,20 +11,17 @@ https://docs.amplication.com/how-to/custom-code
   */
 import { InputType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
-import { IsString, IsOptional } from "class-validator";
+import { IsString } from "class-validator";
 
 @InputType()
 class FailingCreateInput {
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  newField?: string | null;
+  @Field(() => String)
+  newField!: string;
 }
 
 export { FailingCreateInput as FailingCreateInput };
