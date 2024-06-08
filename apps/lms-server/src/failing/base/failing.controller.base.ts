@@ -33,14 +33,7 @@ export class FailingControllerBase {
     return await this.service.createFailing({
       data: data,
       select: {
-        address1: true,
-        address2: true,
-        city: true,
-        country: true,
         id: true,
-        phone: true,
-        state: true,
-        studentId: true,
         zip: true,
       },
     });
@@ -54,14 +47,7 @@ export class FailingControllerBase {
     return this.service.failings({
       ...args,
       select: {
-        address1: true,
-        address2: true,
-        city: true,
-        country: true,
         id: true,
-        phone: true,
-        state: true,
-        studentId: true,
         zip: true,
       },
     });
@@ -76,14 +62,7 @@ export class FailingControllerBase {
     const result = await this.service.failing({
       where: params,
       select: {
-        address1: true,
-        address2: true,
-        city: true,
-        country: true,
         id: true,
-        phone: true,
-        state: true,
-        studentId: true,
         zip: true,
       },
     });
@@ -107,14 +86,7 @@ export class FailingControllerBase {
         where: params,
         data: data,
         select: {
-          address1: true,
-          address2: true,
-          city: true,
-          country: true,
           id: true,
-          phone: true,
-          state: true,
-          studentId: true,
           zip: true,
         },
       });
@@ -138,14 +110,7 @@ export class FailingControllerBase {
       return await this.service.deleteFailing({
         where: params,
         select: {
-          address1: true,
-          address2: true,
-          city: true,
-          country: true,
           id: true,
-          phone: true,
-          state: true,
-          studentId: true,
           zip: true,
         },
       });
