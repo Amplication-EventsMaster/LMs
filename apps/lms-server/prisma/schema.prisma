@@ -62,7 +62,7 @@ model Failing {
   address1  String? @db.VarChar(100)
   address2  String? @db.VarChar(100)
   city      String? @db.VarChar(100)
-  country   String? @db.VarChar(100)
+  country   String  @db.VarChar(100)
   id        Int     @id @default(autoincrement())
   phone     String? @db.VarChar(50)
   state     String? @db.VarChar(100)
