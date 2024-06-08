@@ -34,7 +34,7 @@ export class FailingControllerBase {
       data: data,
       select: {
         id: true,
-        zip: true,
+        newField: true,
       },
     });
   }
@@ -48,7 +48,7 @@ export class FailingControllerBase {
       ...args,
       select: {
         id: true,
-        zip: true,
+        newField: true,
       },
     });
   }
@@ -63,7 +63,7 @@ export class FailingControllerBase {
       where: params,
       select: {
         id: true,
-        zip: true,
+        newField: true,
       },
     });
     if (result === null) {
@@ -87,7 +87,7 @@ export class FailingControllerBase {
         data: data,
         select: {
           id: true,
-          zip: true,
+          newField: true,
         },
       });
     } catch (error) {
@@ -111,7 +111,7 @@ export class FailingControllerBase {
         where: params,
         select: {
           id: true,
-          zip: true,
+          newField: true,
         },
       });
     } catch (error) {

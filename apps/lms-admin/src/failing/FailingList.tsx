@@ -13,7 +13,7 @@ export const FailingList = (props: ListProps): React.ReactElement => {
     >
       <Datagrid rowClick="show">
         <TextField label="ID" source="id" />
-        <TextField label="Zip" source="zip" />
+        <TextField label="new field" source="newField" />
       </Datagrid>
     </List>
   );

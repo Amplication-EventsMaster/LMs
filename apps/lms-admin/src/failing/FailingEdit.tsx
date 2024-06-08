@@ -5,7 +5,7 @@ export const FailingEdit = (props: EditProps): React.ReactElement => {
   return (
     <Edit {...props}>
       <SimpleForm>
-        <TextInput label="Zip" source="zip" />
+        <TextInput label="new field" source="newField" />
       </SimpleForm>
     </Edit>
   );

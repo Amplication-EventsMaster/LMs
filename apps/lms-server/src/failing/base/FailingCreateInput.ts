@@ -24,7 +24,7 @@ class FailingCreateInput {
   @Field(() => String, {
     nullable: true,
   })
-  zip?: string | null;
+  newField?: string | null;
 }
 
 export { FailingCreateInput as FailingCreateInput };

@@ -32,7 +32,7 @@ class Failing {
   @Field(() => String, {
     nullable: true,
   })
-  zip!: string | null;
+  newField!: string | null;
 }
 
 export { Failing as Failing };

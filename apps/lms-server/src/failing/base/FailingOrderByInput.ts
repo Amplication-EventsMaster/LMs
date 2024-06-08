@@ -39,7 +39,7 @@ class FailingOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  zip?: SortOrder;
+  newField?: SortOrder;
 }
 
 export { FailingOrderByInput as FailingOrderByInput };
