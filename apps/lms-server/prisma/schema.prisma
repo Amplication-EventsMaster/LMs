@@ -24,7 +24,7 @@ model Course {
   description String?
   endDate     DateTime?
   enrollments Enrollment[]
-  id          Int          @id @default(autoincrement())
+  id          Int          @id @default(autoincrement()) @map("contact_information_id")
   startDate   DateTime?
   title       String?
   updatedAt   DateTime     @updatedAt
