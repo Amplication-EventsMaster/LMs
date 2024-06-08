@@ -1,3 +1,3 @@
 export type CourseWhereUniqueInput = {
-  id: string;
+  id: number;
 };

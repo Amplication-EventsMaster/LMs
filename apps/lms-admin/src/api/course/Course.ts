@@ -6,7 +6,7 @@ export type Course = {
   description: string | null;
   endDate: Date | null;
   enrollments?: Array<Enrollment>;
-  id: string;
+  id: number;
   startDate: Date | null;
   title: string | null;
   updatedAt: Date;

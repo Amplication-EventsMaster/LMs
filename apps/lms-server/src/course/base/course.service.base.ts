@@ -50,7 +50,7 @@ export class CourseServiceBase {
   }
 
   async findEnrollments(
-    parentId: string,
+    parentId: number,
     args: Prisma.EnrollmentFindManyArgs
   ): Promise<PrismaEnrollment[]> {
     return this.prisma.course
