@@ -25,6 +25,10 @@ import { ContactInformationList } from "./contactInformation/ContactInformationL
 import { ContactInformationCreate } from "./contactInformation/ContactInformationCreate";
 import { ContactInformationEdit } from "./contactInformation/ContactInformationEdit";
 import { ContactInformationShow } from "./contactInformation/ContactInformationShow";
+import { FailingList } from "./failing/FailingList";
+import { FailingCreate } from "./failing/FailingCreate";
+import { FailingEdit } from "./failing/FailingEdit";
+import { FailingShow } from "./failing/FailingShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -85,6 +89,13 @@ const App = (): React.ReactElement => {
           edit={ContactInformationEdit}
           create={ContactInformationCreate}
           show={ContactInformationShow}
+        />
+        <Resource
+          name="Failing"
+          list={FailingList}
+          edit={FailingEdit}
+          create={FailingCreate}
+          show={FailingShow}
         />
       </Admin>
     </div>
