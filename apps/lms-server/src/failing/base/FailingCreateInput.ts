@@ -49,15 +49,12 @@ class FailingCreateInput {
   city?: string | null;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: String,
   })
   @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  country?: string | null;
+  @Field(() => String)
+  country!: string;
 
   @ApiProperty({
     required: false,

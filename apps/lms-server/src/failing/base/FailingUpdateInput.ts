@@ -57,7 +57,7 @@ class FailingUpdateInput {
   @Field(() => String, {
     nullable: true,
   })
-  country?: string | null;
+  country?: string;
 
   @ApiProperty({
     required: false,
