@@ -3,6 +3,7 @@ import { StudentModule } from "./student/student.module";
 import { CourseModule } from "./course/course.module";
 import { TeacherModule } from "./teacher/teacher.module";
 import { EnrollmentModule } from "./enrollment/enrollment.module";
+import { ContactInformationModule } from "./contactInformation/contactInformation.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -19,6 +20,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     CourseModule,
     TeacherModule,
     EnrollmentModule,
+    ContactInformationModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
