@@ -12,14 +12,7 @@ export const FailingList = (props: ListProps): React.ReactElement => {
       pagination={<Pagination />}
     >
       <Datagrid rowClick="show">
-        <TextField label="Address1" source="address1" />
-        <TextField label="Address2" source="address2" />
-        <TextField label="City" source="city" />
-        <TextField label="Country" source="country" />
         <TextField label="ID" source="id" />
-        <TextField label="Phone" source="phone" />
-        <TextField label="State" source="state" />
-        <TextField label="Student Id" source="studentId" />
         <TextField label="Zip" source="zip" />
       </Datagrid>
     </List>
