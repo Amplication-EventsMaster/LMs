@@ -1,3 +1,3 @@
 export type FailingWhereUniqueInput = {
-  id: string;
+  id: number;
 };

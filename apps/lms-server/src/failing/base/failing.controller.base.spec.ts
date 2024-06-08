@@ -18,22 +18,50 @@ import { FailingService } from "../failing.service";
 const nonExistingId = "nonExistingId";
 const existingId = "existingId";
 const CREATE_INPUT = {
-  id: "exampleId",
-  newField: "exampleNewField",
+  address1: "exampleAddress1",
+  address2: "exampleAddress2",
+  city: "exampleCity",
+  country: "exampleCountry",
+  id: 42,
+  phone: "examplePhone",
+  state: "exampleState",
+  studentId: 42,
+  zip: "exampleZip",
 };
 const CREATE_RESULT = {
-  id: "exampleId",
-  newField: "exampleNewField",
+  address1: "exampleAddress1",
+  address2: "exampleAddress2",
+  city: "exampleCity",
+  country: "exampleCountry",
+  id: 42,
+  phone: "examplePhone",
+  state: "exampleState",
+  studentId: 42,
+  zip: "exampleZip",
 };
 const FIND_MANY_RESULT = [
   {
-    id: "exampleId",
-    newField: "exampleNewField",
+    address1: "exampleAddress1",
+    address2: "exampleAddress2",
+    city: "exampleCity",
+    country: "exampleCountry",
+    id: 42,
+    phone: "examplePhone",
+    state: "exampleState",
+    studentId: 42,
+    zip: "exampleZip",
   },
 ];
 const FIND_ONE_RESULT = {
-  id: "exampleId",
-  newField: "exampleNewField",
+  address1: "exampleAddress1",
+  address2: "exampleAddress2",
+  city: "exampleCity",
+  country: "exampleCountry",
+  id: 42,
+  phone: "examplePhone",
+  state: "exampleState",
+  studentId: 42,
+  zip: "exampleZip",
 };
 
 const service = {
