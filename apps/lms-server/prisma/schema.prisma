@@ -28,9 +28,6 @@ model Course {
   startDate   DateTime?
   title       String?
   updatedAt   DateTime     @updatedAt
-
-  @@index([Id], map: "student_id")
-  @@map("contact_information")
 }
 
 model Teacher {
@@ -52,4 +49,11 @@ model Enrollment {
   student        Student?  @relation(fields: [studentId], references: [id])
   studentId      String?
   updatedAt      DateTime  @updatedAt
+}
+
+model ContactInformation {
+  createdAt DateTime @default(now())
+  dd        String?
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
 }
