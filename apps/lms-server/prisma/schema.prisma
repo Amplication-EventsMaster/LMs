@@ -59,6 +59,6 @@ model ContactInformation {
 }
 
 model Failing {
-  id  Int     @id @default(autoincrement())
+  id  String  @id @default(cuid())
   zip String?
 }

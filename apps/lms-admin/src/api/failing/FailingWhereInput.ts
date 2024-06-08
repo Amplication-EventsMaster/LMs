@@ -1,7 +1,7 @@
-import { IntFilter } from "../../util/IntFilter";
+import { StringFilter } from "../../util/StringFilter";
 import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 export type FailingWhereInput = {
-  id?: IntFilter;
+  id?: StringFilter;
   zip?: StringNullableFilter;
 };
