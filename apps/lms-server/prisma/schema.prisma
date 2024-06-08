@@ -24,7 +24,7 @@ model Course {
   description String?
   endDate     DateTime?
   enrollments Enrollment[]
-  id          String       @id @default(cuid())
+  id          Int          @id @default(autoincrement())
   startDate   DateTime?
   title       String?
   updatedAt   DateTime     @updatedAt
@@ -42,7 +42,7 @@ model Teacher {
 
 model Enrollment {
   course         Course?   @relation(fields: [courseId], references: [id])
-  courseId       String?
+  courseId       Int?
   createdAt      DateTime  @default(now())
   enrollmentDate DateTime?
   id             String    @id @default(cuid())
