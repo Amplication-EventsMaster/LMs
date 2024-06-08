@@ -38,7 +38,7 @@ class FailingWhereInput {
   @Field(() => StringNullableFilter, {
     nullable: true,
   })
-  zip?: StringNullableFilter;
+  newField?: StringNullableFilter;
 }
 
 export { FailingWhereInput as FailingWhereInput };

@@ -1,4 +1,4 @@
 export type Failing = {
   id: string;
-  zip: string | null;
+  newField: string | null;
 };

@@ -5,7 +5,7 @@ export const FailingCreate = (props: CreateProps): React.ReactElement => {
   return (
     <Create {...props}>
       <SimpleForm>
-        <TextInput label="Zip" source="zip" />
+        <TextInput label="new field" source="newField" />
       </SimpleForm>
     </Create>
   );
